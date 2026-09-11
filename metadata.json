@@ -1,0 +1,6 @@
+{
+  "name": "Advanced Mail Dashboard",
+  "description": "A premium, sophisticated webmail client and server dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

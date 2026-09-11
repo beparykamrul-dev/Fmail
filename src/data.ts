@@ -1,0 +1,52 @@
+import { Email } from './types';
+
+export const mockEmails: Email[] = [
+  {
+    id: '1',
+    sender: { name: 'Cloudflare', email: 'workflows@cloudflare.com', avatar: 'https://api.dicebear.com/9.x/initials/svg?seed=CF&backgroundColor=f97316' },
+    recipient: 'beparykamrul@gmail.com',
+    subject: 'Cloudflare Workflows is now available',
+    preview: 'Build durable multi-step applications on Cloudflare Workers with Workflows.',
+    body: `With Workflows, you can build applications that chain together multiple steps, automatically retry failed tasks, and persist state for minutes, hours, or even weeks - with no infrastructure to manage.\n\nUse Workflows to build reliable AI applications, process data pipelines, manage user lifecycle with automated emails and trial expirations, and implement human-in-the-loop approval systems.\n\nFeatures:\n- Durable step execution\n- Sleep and scheduling\n- Wait for external events\n- Workflow lifecycle management`,
+    date: new Date(Date.now() - 1000 * 60 * 15).toISOString(),
+    isRead: false,
+    folder: 'inbox',
+    labels: ['Product Update'],
+  },
+  {
+    id: '2',
+    sender: { name: 'Vercel', email: 'team@vercel.com', avatar: 'https://api.dicebear.com/9.x/initials/svg?seed=VC&backgroundColor=000000' },
+    recipient: 'beparykamrul@gmail.com',
+    subject: 'Your deployment has completed',
+    preview: 'The deployment for advanced-mail-server is now available.',
+    body: 'Your latest push to main has been deployed successfully to production.\n\nDeployment URL: https://advanced-mail-server.vercel.app\nDuration: 45s\n\nView build logs in your dashboard.',
+    date: new Date(Date.now() - 1000 * 60 * 60 * 2).toISOString(),
+    isRead: true,
+    folder: 'inbox',
+    labels: ['Alerts'],
+  },
+  {
+    id: '3',
+    sender: { name: 'GitHub', email: 'notifications@github.com', avatar: 'https://api.dicebear.com/9.x/initials/svg?seed=GH&backgroundColor=24292f' },
+    recipient: 'beparykamrul@gmail.com',
+    subject: '[cloudflare/workflows] New release v1.0.0',
+    preview: 'A new release has been published in the repository.',
+    body: 'Release v1.0.0 is out now. Check out the release notes on GitHub to see what is new!',
+    date: new Date(Date.now() - 1000 * 60 * 60 * 24).toISOString(),
+    isRead: false,
+    folder: 'inbox',
+    labels: [],
+  },
+  {
+    id: '4',
+    sender: { name: 'Alice Smith', email: 'alice@example.com' },
+    recipient: 'beparykamrul@gmail.com',
+    subject: 'Project Meeting Notes',
+    preview: 'Here are the notes from our discussion earlier today.',
+    body: 'Hi Kamrul,\n\nThanks for taking the time to meet today. We discussed the architecture for the new advanced mail dashboard. I think focusing on a single-page app with a clean UI is the right approach.\n\nLet me know if you need any help with the design phase.\n\nBest,\nAlice',
+    date: new Date(Date.now() - 1000 * 60 * 60 * 48).toISOString(),
+    isRead: true,
+    folder: 'inbox',
+    labels: ['Work'],
+  }
+];
